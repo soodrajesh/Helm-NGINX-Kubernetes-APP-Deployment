@@ -1,3 +1,6 @@
+# Example values.yaml file
+# Copy this file to values.yaml and update with your actual values
+
 replicaCount: 2
 
 image:
@@ -60,5 +63,3 @@ autoscaling:
   maxReplicas: 100
   targetCPUUtilizationPercentage: 80
   # targetMemoryUtilizationPercentage: 80
-
-

@@ -1,0 +1,169 @@
+# Kubernetes specific files
+*.kubeconfig
+kubeconfig
+.kube/
+kubeconfig.yaml
+kubeconfig.yml
+
+# Secrets and sensitive data
+*-secret.yaml
+*-secrets.yaml
+secrets/
+*.secret
+*.secrets
+.env
+.env.local
+.env.production
+.env.development
+.env.staging
+
+# Base64 encoded secrets (check for actual encoded values)
+# These patterns help identify files with base64 encoded secrets
+*-encoded-*
+*encoded*
+*secret*
+
+# Kubernetes state files
+*.tfstate
+*.tfstate.backup
+*.tfstate.lock.info
+.terraform/
+.terraform.lock.hcl
+
+# Helm charts
+charts/
+*.tgz
+*.tar.gz
+helm-charts/
+
+# Helm specific files
+values-*.yaml
+values-*.yml
+*-values.yaml
+*-values.yml
+secrets.yaml
+secrets.yml
+
+# Logs
+*.log
+logs/
+kubectl-logs/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Backup files
+*.backup
+*.bak
+*.orig
+
+# Package files
+*.zip
+*.tar.gz
+*.rar
+
+# Node modules (if any frontend components)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python (if any scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Shell scripts with sensitive data
+*.env
+.env.local
+.env.production
+.env.development
+
+# AWS credentials and config
+.aws/
+aws.config
+aws.credentials
+~/.aws/
+
+# SSH keys and certificates
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+id_rsa*
+id_dsa*
+id_ecdsa*
+id_ed25519*
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Kubernetes manifests with actual secrets
+# Add specific patterns for your project
+*-prod-secret.yaml
+*-prod-secrets.yaml
+*-dev-secret.yaml
+*-dev-secrets.yaml
+
+# Terraform files (if using Terraform for K8s)
+*.tf
+*.tfvars
+*.tfvars.json
+*.auto.tfvars
+*.auto.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Jenkins and CI/CD files
+jenkins_home/
+.jenkins/
+secrets/
+credentials.xml
+
+# Docker files
+.dockerignore
+Dockerfile.prod
+Dockerfile.dev
+docker-compose.override.yml
+
+# Helm specific sensitive files
+values-prod.yaml
+values-dev.yaml
+values-staging.yaml
+values-local.yaml
+secrets.yaml
+secrets.yml
